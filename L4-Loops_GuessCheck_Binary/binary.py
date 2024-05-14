@@ -1,3 +1,11 @@
+#### motivation ####
+x = 0 
+for i in range(10):
+	x += 0.1 
+print(x == 1) # False
+print(x) # 0.9999999999999999
+
+
 #### converting to Binary ####
 num = 1507
 

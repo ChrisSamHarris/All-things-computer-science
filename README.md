@@ -1,5 +1,13 @@
-# MIT6100L
-## Introduction To CS And Programming Using Python
+# All things computer science 
+
+## Neetcode 
+https://neetcode.io/
+
+## Leetcode 
+https://leetcode.com/u/chrissamharris/
+
+## MIT6100L
+### Introduction To CS And Programming Using Python
 
 Using this course to get back up to speed with the scientific aspect of Python Software Engineering. 
 
@@ -9,7 +17,7 @@ MITOpenCourseWare [Information](https://ocw.mit.edu/courses/6-100l-introduction-
 
 **Please Note:** All files have been exported from the bear text editor. In order to read any notes, please [download bear](https://bear.app/), and import the notes (*.bear files). https://bear.app/faq/import-your-notes/
 
-## Course Contents 
+### Course Contents 
 * L1-Intro_to_cs
 * L2-StringsInputOutputBranching               
 * L3-Iteration

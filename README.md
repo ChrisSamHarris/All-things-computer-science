@@ -22,4 +22,10 @@ MITOpenCourseWare [Information](https://ocw.mit.edu/courses/6-100l-introduction-
 * L2-StringsInputOutputBranching               
 * L3-Iteration
 * L4-Loops_GuessCheck_Binary
+* L5-Floats_Approximation
+* L6-Bisection_Search
+* L7-Decomposition_Abstraction 
+* L8-Functions_as_objects
+* L9-Lambdas_Tuples_lists 
+* L10-Lists_Mutability 
 

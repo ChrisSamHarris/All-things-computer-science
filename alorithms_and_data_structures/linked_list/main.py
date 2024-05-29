@@ -4,6 +4,12 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
+        
+def traversing_ll(head):
+    cur = head #ListNode1
+    while cur:
+        cur = cur.next
+
 
 # Creating nodes
 node1 = Node(1)

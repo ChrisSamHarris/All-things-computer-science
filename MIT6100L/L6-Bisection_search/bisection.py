@@ -25,4 +25,3 @@ while abs(guess**2 - x) >= epsilion:
 print(f'number of guesses = {num_guess}')
 print(f'{guess} is close to the square root of {x}')
 # print(f'The closest whole number for the square root of {x} is {round(guess)}')
-    

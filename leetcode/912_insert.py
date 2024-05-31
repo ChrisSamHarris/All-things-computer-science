@@ -29,4 +29,11 @@ class Solution(object):
                 j -= 1
 
         return nums
+   
+sol = Solution().insertionSortArray([5,2,3,1,99,27,33,27,28,90,45,65,999,12,15,26,36,48,55,61,70,80,85,1,1,5,7,76,23])
+print(sol)
+
+
+                
+        
                 

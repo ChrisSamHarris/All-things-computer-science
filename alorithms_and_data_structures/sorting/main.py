@@ -12,6 +12,7 @@ def insertionSort(arr):
             j -= 1
     return arr
 
+print("\nInsertionSort")
 arr = [5, 2, 3, 1, 9, 4, 22, 7, 78, 2 ,3, 78, 99, 0, 1]
 print(insertionSort(arr))
 
@@ -68,6 +69,7 @@ def mergeSort(arr, s, e):
     
     return arr
 
+print('\nMergeSort')
 arr = [5, 2, 3, 1, 9, 4, 22, 7, 78, 2 ,3, 78, 99, 0, 1]
 print(mergeSort(arr, 0, len(arr) - 1))
 
@@ -101,6 +103,9 @@ def quickSort(arr: list[int], s: int, e: int) -> list[int]:
 
     return arr
 
+print('\nQuickSort')
+arr = [5, 2, 3, 1, 9, 4, 22, 7, 78, 2 ,3, 78, 99, 0, 1]
+print(quickSort(arr, 0, len(arr) - 1))
 
 ### BUCKET SORT ###
 
@@ -120,4 +125,5 @@ def bucketSort(arr):
             i += 1
     return arr
 
+print("\nBucketSort")
 print(bucketSort([2,1,2,0,0,2]))

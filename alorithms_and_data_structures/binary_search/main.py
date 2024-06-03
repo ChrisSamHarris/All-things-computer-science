@@ -25,9 +25,18 @@ class Solution(object):
     
 #### Binary Search - Range ####
 
+target = 99
+# Return 1 if n is too big, -1 if too small, 0 if correct
+def isCorrect(n):
+    if n > target:
+        return 1
+    elif n < target:
+        return -1
+    else:
+        return 0
+
 # Binary search on some range of values
 def binarySearch(low, high):
-
     while low <= high:
         mid = (low + high) // 2
 
@@ -40,12 +49,5 @@ def binarySearch(low, high):
     return -1
 
 
-# Return 1 if n is too big, -1 if too small, 0 if correct
-def isCorrect(n):
-    if n > 10:
-        return 1
-    elif n < 10:
-        return -1
-    else:
-        return 0
+print(binarySearch(100, 5068))
 

@@ -44,3 +44,16 @@ def rec_inc_num(num,steps):
     return rec_inc_num(num -1, steps +1)
     
 print(rec_inc_num(99,0))
+
+#### QucikSort ####
+def quickSort(arr):
+    if len(arr) < 2:
+        return arr 
+    else:
+        pivot = arr[0]
+        less = [i for i in arr[1:] if i <= pivot]
+        greater = [i for i in arr[1:] if i > pivot]
+        
+        return quickSort(less) + [pivot] + quickSort(greater)
+    
+print(quickSort([4,7,1,9,8,4,5,6,6]))

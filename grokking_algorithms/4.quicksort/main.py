@@ -45,7 +45,7 @@ def rec_inc_num(num,steps):
     
 print(rec_inc_num(99,0))
 
-#### QucikSort ####
+#### QuickSort ####
 def quickSort(arr):
     if len(arr) < 2:
         return arr 
@@ -57,3 +57,16 @@ def quickSort(arr):
         return quickSort(less) + [pivot] + quickSort(greater)
     
 print(quickSort([4,7,1,9,8,4,5,6,6]))
+
+
+#### QuickSort - Middle Index #### 
+def quickSort(self, arr):
+    if len(arr) < 2:
+        return arr 
+    else:
+        pivot_index = len(arr) // 2
+        pivot = arr[pivot_index]
+        less = [i for i in arr[:pivot_index] + arr[pivot_index+1:] if i <= pivot]
+        greater = [i for i in arr[:pivot_index] + arr[pivot_index+1:] if i > pivot]
+        
+        return self.quickSort(less) + [pivot] + self.quickSort(greater)

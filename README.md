@@ -1,7 +1,22 @@
-# All things computer science 
+# Computer Science
+
+This repository has been designed as my data-dump of all my Computer Science learnings and theory. The repository currently consists of : 
+- Neetcode Beginner Algorithms and Data Structures 
+- Neetcode Advanced Algorithms 
+- Grokking Algorithms (Book)
+- Data Lemur SQL Course (Beginner to Advanced)
+- Leetcode Questions 
+- MIT 6.100L 
+- Adhoc Academic Videos 
 
 ## Neetcode 
-https://neetcode.io/
+https://neetcode.io/courses/
+
+## Grokking Algorithms 
+https://www.manning.com/books/grokking-algorithms
+
+## Data Lemur 
+https://datalemur.com/sql-tutorial
 
 ## Leetcode 
 https://leetcode.com/u/chrissamharris/

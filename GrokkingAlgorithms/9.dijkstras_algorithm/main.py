@@ -29,7 +29,11 @@ parents["fin"] = None
 
 processed = set()
 
+
 def find_lowest_cost_node(costs):
+    """
+    Find the lowest node not yet processed
+    """
     lowest_cost = math.inf
     lowest_cost_node = None
     for node in costs:

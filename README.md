@@ -9,6 +9,8 @@ This repository has been designed as my data-dump of all my Computer Science lea
 - MIT 6.100L 
 - Adhoc Academic Videos 
 
+**Please Note:** All files have been exported from the bear text editor. In order to read any notes, please [download bear](https://bear.app/), and import the notes (*.bear files). https://bear.app/faq/import-your-notes/
+
 ## Neetcode 
 https://neetcode.io/courses/
 
@@ -30,7 +32,6 @@ MITOpenCourseWare [Information](https://ocw.mit.edu/courses/6-100l-introduction-
 
 [Youtube Playlist](https://www.youtube.com/playlist?list=PLUl4u3cNGP62A-ynp6v6-LGBCzeH3VAQB) - MIT 6.100L Introduction to CS and Programming using Python, Fall 2022 
 
-**Please Note:** All files have been exported from the bear text editor. In order to read any notes, please [download bear](https://bear.app/), and import the notes (*.bear files). https://bear.app/faq/import-your-notes/
 
 ### Course Contents 
 * L1-Intro_to_cs

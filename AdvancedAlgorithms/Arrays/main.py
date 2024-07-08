@@ -55,6 +55,7 @@ print(slidingWindow([4,-1,2,-7,3,4]))
 
 
 #### Sliding Window Fixed Size 
+##### Q: Given an array, return true if there are two elements within a window of size k that are equal.
 
 ## Loop Solution - Brute Force 
 def closeDuplicatesBruteForce(nums, k):

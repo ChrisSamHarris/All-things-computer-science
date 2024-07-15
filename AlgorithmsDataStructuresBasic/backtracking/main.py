@@ -1,3 +1,5 @@
+
+
 class TreeNode:
     def __init__(self, val):
         self.val = val
@@ -5,6 +7,7 @@ class TreeNode:
         self.right = None
 
 #### Reach Leaf - Return Bool ####
+##### Determine if a path exists from the root of a tree, to a leaf node, the path must not contain any 0s
 
 def canReachLeaf(root):
     if not root or root.val == 0:

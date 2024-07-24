@@ -1,7 +1,8 @@
 #### Sliding Window Fixed Size 
+
 ##### Q: Given an array, return true if there are two elements within a window of size k that are equal.
 
-## Loop Solution - Brute Force 
+## Loop Solution - Brute Force - O(n**2)
 def closeDuplicatesBruteForce(nums, k):
     for L in range(len(nums)):
         # min(len(nums), L + k) is used to avoid index out of range
@@ -11,12 +12,12 @@ def closeDuplicatesBruteForce(nums, k):
     return False
 
 
-## Hashset solution
+## Hashset solution - O(n)
 def closeDuplicates(nums, k):
     """
     Hashset can be used to check for duplicates in a window of size k.
     """
-    window = set() # Cur window of size <= k
+    window = set() # Cur window of size <= k | optimising
     L = 0
 
     for R in range(len(nums)):

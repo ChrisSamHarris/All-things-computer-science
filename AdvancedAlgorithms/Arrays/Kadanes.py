@@ -1,9 +1,9 @@
 #### Kadanes Algorithm
 ##### Find a non-empty subarray with the largest sum
-
 def bruteForce(nums):
     """
     2 pointers. Working solution time complexity is N**2.
+    Every possible subArray and kee[ track of the largest sum
     """
     maxSum = nums[0]
 
@@ -17,8 +17,10 @@ def bruteForce(nums):
 
 def kadanes(nums):
     """
-    Kadanes Algorithm - the maximum sum of a contiguous subarray in an array with a runtime of O(n).
+    Kadanes Algorithm - the maximum sum of a contiguous subarray in an array with a runtime of O(n)- linear time. 
+    If the curSum isn't greater than 0, we reset it to 0.
     """
+    
     maxSum = nums[0]
     curSum = 0
 
@@ -32,7 +34,8 @@ def kadanes(nums):
 
 print(kadanes([4,-1,2,-7,3,4]))
 
-##### What is we want to return the indexes of the max subarray? - Sliding Window 
+
+##### What if we want to return the indexes of the max subarray within the array? - Sliding Window 
 def slidingWindow(nums):
     maxSum = nums[0]
     curSum = 0

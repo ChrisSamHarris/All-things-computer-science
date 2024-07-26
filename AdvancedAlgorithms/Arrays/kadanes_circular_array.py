@@ -28,11 +28,14 @@ def findMaxSumCircular(nums):
     
     # 2. Max subarray sum in a circular array
     total_sum = sum(nums)
+    
+    # minimum subarray of nums = minsumsubarray
     minSumSubarray = [-n for n in nums]
     min_sum = kadanes(minSumSubarray)
     
     # We calculate the maximum sum possible in a circular configuration.
     # Mathmatically: max_circular_sum = total_sum - min_sum
+    # sum of all elements which is the same as the max subarray that can be obtaineed through wrapping 
     circular_max = total_sum + min_sum
     
     # handle edge cases where all numbers are negative

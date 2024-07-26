@@ -18,8 +18,11 @@ def shortestSubarray(nums, target):
     
     for R in range(len(nums)):
         total += nums[R]
+        
+        # Embed a while loop to progress L in order to work to the smallest subarray
         while total >= target:
             length = min(R - L + 1, length)
             total -= nums[L]
             L += 1
+            
     return 0 if length == float("inf") else length

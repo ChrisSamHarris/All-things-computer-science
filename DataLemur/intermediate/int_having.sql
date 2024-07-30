@@ -1,5 +1,6 @@
 -- Overcome the error of 'aggregate functions are not allowed in WHERE' 
 -- HAVING allows you to filter data based on values from aggregate functions like SUM, COUNT, AVG, MAX, and MIN
+
 SELECT
     ticker,
     AVG(open)

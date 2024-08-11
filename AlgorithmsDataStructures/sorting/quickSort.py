@@ -11,13 +11,33 @@ class Solution(object):
         if len(nums) <  2:
             return nums
 
-        else:
-            mid_index = len(nums) // 2
-            pivot = nums[mid_index]
+        
+        mid_index = len(nums) // 2
+        pivot = nums[mid_index]
 
         less = [i for i in (nums[:mid_index] + nums[mid_index + 1:]) if i <= pivot]
         greater = [i for i in (nums[:mid_index] + nums[mid_index + 1:]) if i > pivot]
 
         return self.sortArray(less) + [pivot] + self.sortArray(greater)
+    
+import random 
+# memory efficient quicksort
+class Solution(object):
+    def sortArray(self, nums):
+        """
+        QuickSort with a random index 
+        """
+        if len(nums) <= 1:
+            return nums
+
+        pivot = random.choice(nums)
+        lt = [v for v in nums if v < pivot]
+        eq = [v for v in nums if v == pivot]
+        gt = [v for v in nums if v > pivot]
+
+        return self.sortArray(lt) + eq + self.sortArray(gt)
+    
+    
+
     
     

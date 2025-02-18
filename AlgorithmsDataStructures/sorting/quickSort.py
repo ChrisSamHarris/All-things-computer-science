@@ -20,8 +20,10 @@ class Solution(object):
 
         return self.sortArray(less) + [pivot] + self.sortArray(greater)
     
+    
+    
+#### Concise QuickSort #### - memory efficient quicksort
 import random 
-# memory efficient quicksort
 class Solution(object):
     def sortArray(self, nums):
         """

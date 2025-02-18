@@ -57,26 +57,38 @@ def merge(arr, s, m, e):
         j += 1
         k += 1
 
-
+test_1 = mergeSort([3,2,4,1,6,5], 0, len([3,2,4,1,6,5]) - 1)
+print(test_1)
 
 #### concise mergeSort ####
-def merge_sort(arr):
-    if len(arr) <= 1:
-        return arr
-    mid = len(arr) // 2
-    left, right = merge_sort(arr[:mid]), merge_sort(arr[mid:])
+def mergeSort(nums):
+    """
+    MergeSort with a random index
+    
+    Merge sort recursively divides the input array in half until the sub-arrays contain only one element,
+    which are considered sorted. Then, it merges these sorted sub-arrays back together, 
+    comparing the elements and placing them in the correct order.
+    """     
+    def merge(left, right):
+        result = []
+        i = j = 0
+        while i < len(left) and j < len(right):
+            if left[i] <= right[j]:
+                result.append(left[i])
+                i += 1
+            else:
+                result.append(right[j])
+                j += 1
+                
+        result.extend(left[i:])
+        result.extend(right[j:])
+        return result
+
+    if len(nums) <= 1:
+        return nums
+    mid = len(nums) // 2
+    left, right = mergeSort(nums[:mid]), mergeSort(nums[mid:])
     return merge(left, right)
 
-def merge(left, right):
-    result = []
-    i = j = 0
-    while i < len(left) and j < len(right):
-        if left[i] <= right[j]:
-            result.append(left[i])
-            i += 1
-        else:
-            result.append(right[j])
-            j += 1
-    result.extend(left[i:])
-    result.extend(right[j:])
-    return result
+test_2 = mergeSort([3,2,4,1,6,5])
+print(test_2)
